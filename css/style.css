@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    /* background-color: black; */
+}
+.logo h1{
+    padding: 5px;
+    font-size: 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    /* cursor: pointer; */
+}
+
+.nav-list{
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 15px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.nav-list li a:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.1s ease-in;
+}
+
+
+.rightNav{
+    /* background-color: blue; */
+    width: 50%;
+    text-align: right;
+    padding: 0px 20px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid grey;
+    border-radius: 9px;
+    
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}
+.firstHalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.secondHalf{
+    width: 30%;
+}
+.firstHalf .text-big{
+    font-weight: bolder;
+    font-size: 35px;
+}
+.text-small{
+    font-size: 17px;
+    margin: 10px 0px;
+}
+.secondHalf img{
+    width: 270px;
+    height: 240px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 3px;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+/* Right section  */
+.secRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    max-width: 1133px;
+    margin: auto;
+}
+.secLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    max-width: 1133px;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+.secRight .imgFluid{
+    width: 270px;
+    height: 240px;
+}
+.sectionTage{
+    font-size: 35px;
+    font-weight: bold;
+}
+.sectionSubTag{
+    font-size: 17px;
+    
+}
+.thumbnail img{
+    border: 2px solid black;
+    border-radius: 20px;
+    display: block;
+    margin: 0px 20px 0px 0px;
+    /* animation-name: AnimateImg; */
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.learn-more{
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 20px;
+}
+@keyframes AnimateImg {
+    from{
+        width: 270px;
+    }
+    to{
+        width: 300px;
+    }
+}
+.type{
+    animation: typing 5s steps(10);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 10ch;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 10;
+    }
+}
+
+.contact{
+    background-color: rgb(219, 219, 219);
+    height: 60vh;
+}
+.text-center{
+    text-align: center;
+    padding: 7px;
+    font-size: 34px;
+}
+.form{
+    max-width: 500px;
+    margin: 0px auto;
+}
+
+.form input{
+    width: 100%;
+    padding: 5px;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 6px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.text-footer{
+    height: 10vh;
+    color: white;
+    /* background-color: rgb(39, 39, 39); */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+        margin-top: 36%;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightNav{
+        width: 60%;
+    }
+}
